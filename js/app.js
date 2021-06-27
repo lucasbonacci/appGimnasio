@@ -1,6 +1,5 @@
 
 const formulario = document.querySelector('#formulario')
-const resultados = document.querySelector('#resultados')
 
 formulario.addEventListener('submit',captarDatos)
 
@@ -89,8 +88,7 @@ function calculaCaloriasMujer(peso,altura,edad, actividad){
 
 
 function imprimirHtml(metabolismoBasal, caloriasDiarias){
-    const resultadosHtml = document.createElement('h5')
-    resultadosHtml.textContent = `tu cuerpo en reposo quema ${metabolismoBasal} y teniendo en cuenta tu actividad fisica quema ${caloriasDiarias}`
-    resultados.appendChild(resultadosHtml)
+    const resultados = document.querySelector('#resultados')
+    resultados.innerHTML = `tu cuerpo en reposo quema ${metabolismoBasal} y teniendo en cuenta tu actividad fisica quema ${caloriasDiarias}`
 }
 

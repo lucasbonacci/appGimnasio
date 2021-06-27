@@ -41,7 +41,6 @@ function calcularGrasaMujeres(altura,cintura,cuello,cadera){
 
 
 function imprimirHtml(porcentajeGraso){
-    const resultadosHtml = document.createElement('h5')
-    resultadosHtml.textContent = `Tu porcentaje graso es de ${porcentajeGraso} %`
-    resultados.appendChild(resultadosHtml)
+    const resultados = document.querySelector('#resultados')
+    resultados.innerHTML = `Tu porcentaje graso es de ${porcentajeGraso} %`
 }
