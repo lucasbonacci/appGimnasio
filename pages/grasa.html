@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grasa Corporal</title>
+    <!--   LINKS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/styleGrasa.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="grasa.html">Calcular grasa corporal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="../index.html">calcular restriccion calorica</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+                <!--    INTRO    -->
+      <div class="container-fluid text-center">
+        <h1> Calculadora de grasa corporal </h1>
+        <p> Esta calculaladora lo que hace es apartir de un sistema del ejercito de los estados unidos a traves de tu peso,altura, cintura, cuello, cadera y  sexo es deducir cuanto de tu peso es grasa corporal</p>
+      </div>
+
+      <div class="container-fluid text-center">
+        <img src="/img/imagengrasa.jpg" alt="">
+          <p><strong>Altura -</strong>  se mide sin zapatos <br>
+          <p> <strong>Peso -</strong> se mide en la mañana sin ropa, después de ir al baño, y antes de comer o beber.</p> 
+          <p><strong>Cintura (Hombres) -  </strong> se mide horizontalmente, al nivel del ombligo</p> 
+          <p><strong>Cintura (Mujeres) -  </strong> se mide horizontalmente, al nivel de la anchura abdominal mínima</p>
+          <p><strong>Cuello -  </strong> se mide debajo de la laringe con la cinta inclinada ligeramente hacia el pecho.</p> 
+          <p><strong>Cadera (Mujeres solamente) -  </strong>  la mayor circunferencia horizontal alrededor de las caderas</p>
+      </div>
+                <!--    FORMULARIO    -->
+
+    <div class="container-fluid text-center divpadre" >
+      <h3>CALCULADORA</h3>
+        <div class="div-Formulario">
+          <form id="formulario" class="form">
+            <label for="altura">
+              <span> Altura en cm</span>
+              <input type="number" name="" id="altura" required>
+            </label>
+            <br>
+
+            <label for="cintura">
+              <span>Cintura en cm:</span>
+              <input type="number" name="" id="cintura" required> 
+            </label>
+            <br>
+
+            <label for="cuello"> 
+              <span>Cuello en cm:</span>
+              <input type="number" name="" id="cuello" required> 
+            </label>
+            <br>
+
+            <label for="cadera">
+              <span>Cadera en cm (mujeres): </span>
+              <input type="number" name="" id="cadera">
+            </label>
+            <br>
+
+            <label for="sexo">
+              <span>Sexo:</span>
+              <select id="sexo">
+                <option value="1" > hombre</option>
+                <option value="2" > mujer</option>
+              </select> 
+            </label>
+              <br>
+            
+            <input type="submit" name="" id="enviar">
+
+        </form>
+        <div id="resultados" class= "container-fluid text-center" ></div>
+      </div>
+    </div>
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <h6> para nosotros el equipo del gym</h6>
+        <p>https://github.com/lucasbonacci</p>
+      </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/appgrasa.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calcular tasa metabolica</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--   LINKS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/styleGrasa.css" rel="stylesheet">
+  </head>
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pages/grasa.html">Calcular grasa corporal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">calcular restriccion calorica</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid text-center">
+        <h1> Calculadora de Restricción Calórica </h1>
+        <p> Esta calculaladora lo que hace es deducir segun tu altura, peso, edad, sexo y actividad cuantas calorias al dia quema tu cuerpo</p>
+    </div>
+
+    <div class="container-fluid text-center">
+      <img src="/img/Indice-masa-corporal.jpg" alt="">
+      <p>Sedentario es poco o ningun tipo de ejercicio</p>
+      <p>Actividad ligera es 1-3 dias de ejercicio a la semana</p>
+      <p>Actividad moderada es 3-5 dias de ejercicio a la semana</p>
+      <p>Actividad intensa es 6-7 dias de ejercicio a la semana</p>
+      <p>Actividad estas re loco es entrenar dos veces al dia, entramientos picantes nashes</p>
+
+    </div>
+      <!--    FORMULARIO    -->
+
+      <div class="container-fluid text-center divpadre" >
+        <h3>CALCULADORA</h3>
+          <div class="div-Formulario">
+            <form id="formulario" class="form">
+              <label for="altura">
+                <span> Altura en cm</span>
+                <input type="number" name="" id="altura" required>
+              </label>
+  
+              <label for="kilos">
+                <span> Peso en Kg</span>
+                <input type="number" name="" id="kilos" required> 
+              </label>
+  
+              <label for="edadd">
+                <span>Edad</span>
+                <input type="number" name="" id="edadd" required> 
+              </label>  
+  
+              <label for="sexo">
+                <span>Sexo</span>
+                <select id="sexo">
+                  <option value="1" > hombre</option>
+                  <option value="2" > mujer</option>
+                </select> 
+              </label>
+
+              <label>
+                <span>Nivel de actividad</span>
+                <select name="" id="actividad">
+                  <option value="0">Sedentario</option>
+                  <option value="1">Actividad Ligera</option>
+                  <option value="2">Actividad Moderada</option>
+                  <option value="3">Actividad Intensa</option>
+                  <option value="4">Actividad estas re loco</option>
+                </select>
+              </label>
+              <input type="submit" name="" id="enviar">
+  
+          </form>
+          <div id="resultados" class= "container-fluid text-center" ></div>
+        </div>
+      </div>
+  
+  
+  
+      <footer class="footer">
+        <div class="container">
+          <h6> para nosotros los pibes del gym</h6>
+          <p>https://github.com/lucasbonacci</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
